@@ -79,9 +79,6 @@ input[type="checkbox"] {
     color: white;
     padding: 25px;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    height: 100vh;
 }
 
 .sidebar h2, .sidebar h3 {
@@ -114,6 +111,7 @@ input[type="checkbox"] {
 <div class="container">
     <h1>IB Course Planner</h1>
 
+    <!-- IB TABLE (Code 1) -->
     <table>
         <tr>
             <th>Group</th>
@@ -195,6 +193,7 @@ input[type="checkbox"] {
         </tr>
     </table>
 
+    <!-- Electives Table (Code 2 inserted) -->
     <h2>Electives</h2>
     <table>
         <tr>
@@ -211,91 +210,7 @@ input[type="checkbox"] {
                 <label><input type="checkbox" class="elective"> Visual Art 12</label>
             </td>
         </tr>
-
-        <tr>
-            <td>2: Performing Arts</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Music 11</label>
-                <label><input type="checkbox" class="elective"> Music 12</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>3: Career Readiness</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Early Childhood Development 12</label>
-                <label><input type="checkbox" class="elective"> Early Childhood Services 11</label>
-                <label><input type="checkbox" class="elective"> Individual Family Dynamics 12</label>
-                <label><input type="checkbox" class="elective"> Psychology 11+12</label>
-                <label><input type="checkbox" class="elective"> Growth Goals Grit 12</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>4: Wellness</td>
-            <td>
-                <label><input type="checkbox" class="elective"> PE through Sport 11</label>
-                <label><input type="checkbox" class="elective"> Outdoor Pursuits 11</label>
-                <label><input type="checkbox" class="elective"> Sport and Rec Leadership 12</label>
-                <label><input type="checkbox" class="elective"> Nutrition 12</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>5: Career Connected</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Business Org Manage 12</label>
-                <label><input type="checkbox" class="elective"> Entrepreneurship 11</label>
-                <label><input type="checkbox" class="elective"> Marketing 12</label>
-                <label><input type="checkbox" class="elective"> Economics 12</label>
-                <label><input type="checkbox" class="elective"> Culinary Tech 11+12</label>
-                <label><input type="checkbox" class="elective"> Hospitality and Tourism 11</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>7: ELA</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Writing 11</label>
-                <label><input type="checkbox" class="elective"> Media Studies 12</label>
-                <label><input type="checkbox" class="elective"> Journalism 12</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>8: Humanities</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Sociology 12</label>
-                <label><input type="checkbox" class="elective historyCourse"> Canadian History 12</label>
-                <label><input type="checkbox" class="elective historyCourse"> Modern History 11</label>
-                <label><input type="checkbox" class="elective"> Religious Identities 12</label>
-                <label><input type="checkbox" class="elective"> World Issues 12</label>
-                <label><input type="checkbox" class="elective"> Wabanaki Studies 12</label>
-                <label><input type="checkbox" class="elective"> Canadian Geo 12</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>9: Sciences</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Human Physiology 11</label>
-                <label><input type="checkbox" class="elective"> Environmental Science 12</label>
-                <label><input type="checkbox" class="elective"> Biology 11+12</label>
-                <label><input type="checkbox" class="elective"> Physics 11+12</label>
-                <label><input type="checkbox" class="elective"> Intro to Electronics 11</label>
-            </td>
-        </tr>
-
-        <tr>
-            <td>10: Tech</td>
-            <td>
-                <label><input type="checkbox" class="elective"> Computer Science 11+12</label>
-                <label><input type="checkbox" class="elective"> Information Tech 12</label>
-                <label><input type="checkbox" class="elective"> Digital Productions 12</label>
-                <label><input type="checkbox" class="elective"> Housing and Design 12</label>
-                <label><input type="checkbox" class="elective"> Computer Assist Manufact 11</label>
-            </td>
-        </tr>
+  <tr>             <td>2: Performing Arts</td>             <td>                 <label><input type="checkbox" class="elective"> Music 11</label>                 <label><input type="checkbox" class="elective"> Music 12</label>             </td>         </tr>         <tr>             <td>3: Career Readiness</td>             <td>                 <label><input type="checkbox" class="elective"> Early Childhood Development 12</label>                 <label><input type="checkbox" class="elective"> Early Childhood Services 11</label>                 <label><input type="checkbox" class="elective"> Individual Family Dynamics 12</label>                 <label><input type="checkbox" class="elective"> Psychology 11+12</label>                 <label><input type="checkbox" class="elective"> Growth Goals Grit 12</label>             </td>         </tr>         <tr>             <td>4: Wellness</td>             <td>                 <label><input type="checkbox" class="elective"> PE through Sport 11</label>                 <label><input type="checkbox" class="elective"> Outdoor Pursuits 11</label>                 <label><input type="checkbox" class="elective"> Sport and Rec Leadership 12</label>                 <label><input type="checkbox" class="elective"> Nutrition 12</label>             </td>         </tr>         <tr>             <td>5: Career Connected</td>             <td>                 <label><input type="checkbox" class="elective"> Business Org Manage 12</label>                 <label><input type="checkbox" class="elective"> Entrepreneurship 11</label>                 <label><input type="checkbox" class="elective"> Marketing 12</label>                 <label><input type="checkbox" class="elective"> Economics 12</label>                 <label><input type="checkbox" class="elective"> Culinary Tech 11+12</label>                 <label><input type="checkbox" class="elective"> Hospitality and Tourism 11</label>             </td>         </tr>         <tr>             <td>7: ELA</td>             <td>                 <label><input type="checkbox" class="elective"> Writing 11</label>                 <label><input type="checkbox" class="elective"> Media Studies 12</label>                 <label><input type="checkbox" class="elective"> Journalism 12</label>             </td>         </tr>         <tr>             <td>8: Humanities</td>             <td>                 <label><input type="checkbox" class="elective"> Sociology 12</label>                 <label><input type="checkbox" class="elective historyCourse"> Canadian History 12</label>                 <label><input type="checkbox" class="elective historyCourse"> Modern History 11</label>                 <label><input type="checkbox" class="elective"> Religious Identities 12</label>                 <label><input type="checkbox" class="elective"> World Issues 12</label>                 <label><input type="checkbox" class="elective"> Wabanaki Studies 12</label>                 <label><input type="checkbox" class="elective"> Canadian Geo 12</label>             </td>         </tr>         <tr>             <td>9: Sciences</td>             <td>                 <label><input type="checkbox" class="elective"> Human Physiology 11</label>                 <label><input type="checkbox" class="elective"> Environmental Science 12</label>                 <label><input type="checkbox" class="elective"> Biology 11+12</label>                 <label><input type="checkbox" class="elective"> Physics 11+12</label>                 <label><input type="checkbox" class="elective"> Intro to Electronics 11</label>             </td>         </tr>         <tr>             <td>10: Tech</td>             <td>                 <label><input type="checkbox" class="elective"> Computer Science 11+12</label>                 <label><input type="checkbox" class="elective"> Information Tech 12</label>                 <label><input type="checkbox" class="elective"> Digital Productions 12</label>                 <label><input type="checkbox" class="elective"> Housing and Design 12</label>                 <label><input type="checkbox" class="elective"> Computer Assist Manufact 11</label>             </td>         </tr>
     </table>
 </div>
 
@@ -326,41 +241,40 @@ input[type="checkbox"] {
 </div>
 
 <script>
-const ibCheckboxes = document.querySelectorAll('input[data-group]');
-const electiveCheckboxes = document.querySelectorAll(".elective");
+/* BOTH SCRIPTS LEFT INTACT */
+
+// IB script
+const checkboxes = document.querySelectorAll('input[type="checkbox"]:not(:disabled)');
 const historyElective = document.getElementById("historyElective");
 
 function update() {
-    // --- IB LOGIC ---
     let hl = 1;
     let sl = 1;
     let groups = {1:true, 2:true};
 
-    ibCheckboxes.forEach(cb => {
+    checkboxes.forEach(cb => {
         if (cb.checked) {
             let lvl = cb.dataset.level;
             let grp = cb.dataset.group;
+
             if (lvl === "HL") hl++;
             if (lvl === "SL") sl++;
+
             groups[grp] = true;
         }
     });
 
-    // Limit HL/SL
-    ibCheckboxes.forEach(cb => {
-        if (!cb.checked && !cb.disabled) {
+    checkboxes.forEach(cb => {
+        if (!cb.checked) {
             if (cb.dataset.level === "HL" && hl >= 3) cb.disabled = true;
             else if (cb.dataset.level === "SL" && sl >= 3) cb.disabled = true;
-        } else if (cb.disabled && !cb.hasAttribute('disabled')) {
-             // Re-enable if space opens up (and it's not the mandatory ones)
-             if (cb.dataset.level === "HL" && hl < 3) cb.disabled = false;
-             if (cb.dataset.level === "SL" && sl < 3) cb.disabled = false;
+            else cb.disabled = false;
         }
     });
 
-    // Update IB sidebar
     document.getElementById("hlStatus").textContent = `HL: ${hl} / 3`;
     document.getElementById("slStatus").textContent = `SL: ${sl} / 3`;
+
     document.getElementById("hlStatus").className = "status " + (hl === 3 ? "ok" : "bad");
     document.getElementById("slStatus").className = "status " + (sl === 3 ? "ok" : "bad");
 
@@ -375,39 +289,48 @@ function update() {
         }
     });
 
-    // --- ELECTIVE LOGIC ---
-    let eCount = 0;
-    electiveCheckboxes.forEach(e => {
-        if (e.checked) eCount++;
+    updateHistory();
+}
+
+// electives script
+const electives = document.querySelectorAll(".elective");
+
+function updateElectives() {
+    let count = 0;
+
+    electives.forEach(e => {
+        if (e.checked) count++;
     });
 
-    electiveCheckboxes.forEach(e => {
-        if (!e.checked) e.disabled = eCount >= 2;
+    electives.forEach(e => {
+        if (!e.checked) e.disabled = count >= 2;
     });
 
-    let eStatusEl = document.getElementById("electiveStatus");
-    eStatusEl.textContent = `Electives: ${eCount} / 2`;
-    eStatusEl.className = "status " + (eCount === 2 ? "ok" : "bad");
+    let el = document.getElementById("electiveStatus");
+    el.textContent = `Electives: ${count} / 2`;
+    el.className = "status " + (count === 2 ? "ok" : "bad");
 
-    // --- SHARED HISTORY LOGIC ---
+    updateHistory();
+}
+
+function updateHistory() {
     let historyDone =
-        document.getElementById("medieval").checked ||
-        document.getElementById("modern").checked ||
+        document.getElementById("medieval")?.checked ||
+        document.getElementById("modern")?.checked ||
         historyElective.checked ||
         document.querySelectorAll(".historyCourse:checked").length > 0;
 
-    let hStatusEl = document.getElementById("historyStatus");
-    hStatusEl.textContent = historyDone ? "History ✔" : "History ✖";
-    hStatusEl.className = "status " + (historyDone ? "ok" : "bad");
+    let historyEl = document.getElementById("historyStatus");
+    historyEl.textContent = historyDone ? "History ✔" : "History ✖";
+    historyEl.className = "status " + (historyDone ? "ok" : "bad");
 }
 
-// Event Listeners
-ibCheckboxes.forEach(cb => cb.addEventListener("change", update));
-electiveCheckboxes.forEach(e => e.addEventListener("change", update));
+checkboxes.forEach(cb => cb.addEventListener("change", update));
+electives.forEach(e => e.addEventListener("change", updateElectives));
 historyElective.addEventListener("change", update);
 
-// Init
 update();
+updateElectives();
 </script>
 
 </body>
