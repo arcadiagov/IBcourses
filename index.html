@@ -375,24 +375,25 @@ const electives = document.querySelectorAll(".elective");
 const historyElective = document.getElementById("historyElective");
 const search = document.getElementById("searchElectives");
 
-/* ========= SAVE / LOAD ========= */
+/* ========= SAVE / LOAD (FIXED) ========= */
 function savePlan() {
     const data = [];
-    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-        data.push({ id: cb.id, checked: cb.checked });
+    document.querySelectorAll('input[type="checkbox"]').forEach((cb, index) => {
+        data.push({ index: index, checked: cb.checked });
     });
     localStorage.setItem("ibPlan", JSON.stringify(data));
 }
 
 function loadPlan() {
     const data = JSON.parse(localStorage.getItem("ibPlan") || "[]");
+    const all = document.querySelectorAll('input[type="checkbox"]');
+
     data.forEach(item => {
-        if (!item.id) return;
-        let el = document.getElementById(item.id);
-        if (el) el.checked = item.checked;
+        if (all[item.index]) {
+            all[item.index].checked = item.checked;
+        }
     });
 }
-
 function clearPlan() {
     localStorage.removeItem("ibPlan");
 }
